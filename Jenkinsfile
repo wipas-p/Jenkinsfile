@@ -1,5 +1,5 @@
 pipeline {
-    agent { label 'slave01' }
+    //agent { label 'slave01' }
     stages {
         stage('Pullcode') {
             steps {
@@ -11,7 +11,7 @@ pipeline {
             echo "testing"
             
             // Windows use bat
-            bat "mvn clean package"
+            //bat "mvn clean package"
           }
         }
 
